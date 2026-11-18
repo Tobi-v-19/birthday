@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy wala Birthday ❤</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 3D canvas is added here by script.js -->
+  <div id="scene"></div>
+
+  <!-- Intro screen -->
+  <div id="intro">
+    <div class="intro-content">
+      <p class="small">A little surprise for</p>
+      <h1 id="introName">My Love</h1>
+      <button id="startBtn">Open your gift bbg 🎁</button>
+    </div>
+  </div>
+
+  <!-- Main UI -->
+  <header id="hud" class="hidden">
+    <h2 id="title">Happy Birthday</h2>
+    <p id="subtitle"></p>
+  </header>
+
+  <div id="caption" class="hidden"></div>
+  <p id="hint" class="hidden">Drag to spin the photos · Tap a photo to zoom</p>
+
+  <nav id="buttons" class="hidden">
+    <button id="musicBtn" title="Music">🎵</button>
+    <button id="confettiBtn" title="Celebrate">🎉</button>
+    <button id="letterBtn" title="Read my letter">💌</button>
+  </nav>
+
+  <!-- Letter modal -->
+  <div id="letterModal" class="modal hidden">
+    <div class="paper">
+      <button id="closeLetter" class="close">✕</button>
+      <h3 id="letterTitle"></h3>
+      <p id="letterText"></p>
+      <p id="letterSign"></p>
+    </div>
+  </div>
+
+  <audio id="bgm" loop></audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
